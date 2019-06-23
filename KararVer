@@ -1,0 +1,27 @@
+        public void KararVer(Dugum root, string npc1, string npc2)
+        {
+            List<Dugum> dList = new List<Dugum>();
+            Dugum temp = root;
+            //ilk tur REX
+            temp = AgacGuncelle(temp, npc1, npc2);
+            dList = getLeavesTree(temp, dList);
+            temp = DegerHesapla(dList);
+            Console.WriteLine("Rex'in seçici: {0}", temp.name);
+            dList.Clear();
+            //ikinci tur MİKE
+            temp = temp.parent.parent.parent;
+            temp = AgacGuncelle(temp, npc2, npc1);
+            Console.WriteLine("{0}", temp.name);
+            dList = getLeavesTree(temp, dList);
+            temp = DegerHesapla(dList);
+            Console.WriteLine("Mike'nin seçimi: {0}", temp.name);
+            dList.Clear();
+            //üçüncü tur REX
+            temp = temp.parent.parent;
+            temp = AgacGuncelle(temp, npc1, npc2);
+            Console.WriteLine("{0}", temp.name);
+            dList = getLeavesTree(temp, dList);
+            temp = DegerHesapla(dList);
+            Console.WriteLine("Rex'in seçimi: {0}", temp.name);
+            dList.Clear();
+        }
