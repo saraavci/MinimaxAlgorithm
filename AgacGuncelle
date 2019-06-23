@@ -1,0 +1,20 @@
+        public Dugum AgacGuncelle(Dugum root, string npc1, string npc2)
+        {
+            Dugum temp = root;
+            if (npc1 == "Rex")
+            {
+                if (root.child1 != null) temp.child1.value = temp.child1.action * 3 + temp.child1.diplomacy * 1 - temp.child1.exhaustion * 1;
+                if (root.child2 != null) temp.child2.value = temp.child2.action * 3 + temp.child2.diplomacy * 1 - temp.child2.exhaustion * 1;
+                if (root.child3 != null) temp.child3.value = temp.child3.action * 3 + temp.child3.diplomacy * 1 - temp.child3.exhaustion * 1;
+            }
+            if (npc1 == "Mike")
+            {
+                if (root.child1 != null) temp.child1.value = (int)((temp.child1.action * 1.5) + (temp.child1.diplomacy * 2.5) - (temp.child1.exhaustion * 1));
+                if (root.child2 != null) temp.child2.value = (int)((temp.child2.action * 1.5) + (temp.child2.diplomacy * 2.5) - (temp.child2.exhaustion * 1));
+                if (root.child3 != null) temp.child3.value = (int)((temp.child3.action * 1.5) + (temp.child3.diplomacy * 2.5) - (temp.child3.exhaustion * 1));
+            }
+            if (root.child1 != null) AgacGuncelle(temp.child1, npc1, npc2);
+            if (root.child2 != null) AgacGuncelle(temp.child2, npc1, npc2);
+            if (root.child3 != null) AgacGuncelle(temp.child3, npc1, npc2);
+            return temp;
+        }
