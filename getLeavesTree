@@ -1,0 +1,8 @@
+        public List<Dugum> getLeavesTree(Dugum root, List<Dugum> dList)
+        {
+            if (root.child1 == null && root.child2 == null && root.child3 == null) dList.Add(root);
+            if (root.child1 != null) getLeavesTree(root.child1, dList);
+            if (root.child2 != null) getLeavesTree(root.child2, dList);
+            if (root.child3 != null) getLeavesTree(root.child3, dList);
+            return dList;
+        }
