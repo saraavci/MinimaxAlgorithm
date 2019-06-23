@@ -1,0 +1,21 @@
+        public class Dugum
+        {
+            public Dugum parent = null;
+            public string name;
+            public int action;
+            public int diplomacy;
+            public int exhaustion;
+            public int value;
+            public Dugum child1 = null;
+            public Dugum child2 = null;
+            public Dugum child3 = null;
+
+            public Dugum(string name, int act, int dip)
+            {
+                this.name = name;
+                this.action = act;
+                this.diplomacy = dip;
+                this.exhaustion = this.action / 2;
+                this.value = this.action + this.diplomacy - this.exhaustion;
+            }
+        }
