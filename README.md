@@ -13,7 +13,6 @@ Bu algoritma, karakterin ne kadar hasar alacağını umursamadan karşı tarafa 
 X: Her action için etkilenme katsayısı(sabit) 
 
 A: Karakterin yaptığı action değeri 
-
 Y: Her diplomatik hareket için etkilenme katsayısı(sabit) 
 
 D: Karakterin yaptığı diplomasi değeri 
