@@ -11,9 +11,13 @@ Bu algoritma, karakterin ne kadar hasar alacağını umursamadan karşı tarafa 
 ![](/images/agrassive_for.JPG)
 
 X: Her action için etkilenme katsayısı(sabit) 
+
 A: Karakterin yaptığı action değeri 
+
 Y: Her diplomatik hareket için etkilenme katsayısı(sabit) 
+
 D: Karakterin yaptığı diplomasi değeri 
+
 
 Burada “XMc” ifadesi Mike karakterinin cengaver sınıfından her action için ne kadar etkileneceğini belirten katsayıdır. Yani Mike karakteri için farklı cengaver karakterlerinde dahi değişmeyen katsayıdır. “YMc” değeri ise her diplomasi değeri için Mike’nin etkienme değerini ifade eder. Geri kalan “AR” ve “DR” değerleri Rex karakterine aittir. Benzer şekilde “XRd” ve “YRd” ifadeleri Rex karakterinin düzenbaz sınıfından olan bir karakterden action ve diplomasi için etkilenme katsayılarıdır. Geri kalan sabitler ve değişkenler ise Mike’ye aittir.
 
