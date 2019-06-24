@@ -13,6 +13,7 @@ Bu algoritma, karakterin ne kadar hasar alacağını umursamadan karşı tarafa 
 X: Her action için etkilenme katsayısı(sabit) 
 
 A: Karakterin yaptığı action değeri 
+
 Y: Her diplomatik hareket için etkilenme katsayısı(sabit) 
 
 D: Karakterin yaptığı diplomasi değeri 
@@ -25,6 +26,7 @@ Bu algoritma gerçeğe en uygun şekilce çıktı vermesi amacıyla Passive Algo
 ![](/images/defensive_for.JPG)
 
 z: Karakterin yorgunluk katsayısı(sabit) 
+
 E: Yapılan her action için etkilenme değeri 
 
 Burada “zR” ve “ER” değerlerinin tamamı Rex karakterine aittir. "zM" ve "EM" değerleri ise Mike karakterine ait değerlerdir. E değişkeni ise action anlamına gelen A değerinin yarısına eşit olacak şekilde hesaplanmıştır. z değerleri ise bir karakter için daima aynı değere sabittir. Bu değerler ile karakterin yapmış olduğu her hamle için yorgunluk değerini ana değerden düşürerek daha gerçekçi değerler elde edilebilmesi amaçlanmıştır. 
